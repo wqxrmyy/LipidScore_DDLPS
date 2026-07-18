@@ -1,36 +1,16 @@
-# R临时文件
+# R 临时文件
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 *.Rproj
 
-# 大型数据文件（不提交到GitHub）
+# 大型数据文件（不提交到 GitHub，用 Figshare/Zenodo 单独存档）
 *.rds
 *.RDS
-raw/TCGA_LPS_real_counts.rds
-raw/TCGA_LPS_real_counts_filtered.rds
-raw/TCGA_LPS_real_log2cpm.rds
-raw/TCGA_6genes_expr.rds
-raw/TCGA_Lipid_Score.rds
-raw/GSE21122_6genes_expr.rds
-raw/GSE21122_Lipid_Score.rds
-raw/GSE21122_log2expr.rds
-raw/GSE21122_sample_names.rds
-raw/GSE159659_6genes_expr.rds
-raw/GSE159659_Lipid_Score.rds
-
-# 原始未处理文件
-raw/不用的原始文件/
-raw/GSE21653/
-raw/GSE30929/
-
-# 安装程序
-raw/Git-*.exe
-
-# 临时文件
-临时.txt
-MANIFEST.txt
+data/TCGA_SARC_expression.rds
+data/GSE21122_expression.rds
+data/GSE159659_expression.rds
 
 # 系统文件
 .DS_Store
