@@ -1,0 +1,7 @@
+"Rank","Gene","Symbol","Description","Chromosome","Pathway"
+1,"FASN","FASN","Fatty acid synthase","17q25.3","Fatty acid synthesis"
+2,"ACLY","ACLY","ATP citrate lyase","17q21.2","Fatty acid synthesis"
+3,"SCD","SCD","Stearoyl-CoA desaturase","10q24.31","Fatty acid desaturation"
+4,"SREBF1","SREBF1","Sterol regulatory element binding transcription factor 1","17p11.2","Lipogenesis regulation"
+5,"HMGCR","HMGCR","3-hydroxy-3-methylglutaryl-CoA reductase","5q13.3","Cholesterol synthesis"
+6,"PPARG","PPARG","Peroxisome proliferator activated receptor gamma","3p25.2","PPAR signaling"
