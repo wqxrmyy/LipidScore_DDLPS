@@ -1,17 +1,8 @@
-# R 临时文件
-.Rproj.user/
-.Rhistory
 .RData
-.Ruserdata
+.RDataTmp1
+.Rhistory
+.Rproj.user/
 *.Rproj
-
-# 大型数据文件（不提交到 GitHub，用 Figshare/Zenodo 单独存档）
-*.rds
-*.RDS
-data/TCGA_SARC_expression.rds
-data/GSE21122_expression.rds
-data/GSE159659_expression.rds
-
-# 系统文件
+raw/不用的原始文件/
 .DS_Store
 Thumbs.db
