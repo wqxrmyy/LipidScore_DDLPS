@@ -1,66 +1,44 @@
-# A Six-Gene Lipid Metabolism Score Stratifies Prognosis in Dedifferentiated Liposarcoma
+# A Six-Gene Lipid Metabolism Score for DDLPS Prognosis
 
-## Overview
-This repository contains all analysis code and processed data for the development and validation of a lipid metabolism-based prognostic score in dedifferentiated liposarcoma (DDLPS).
+## Study Design
 
-## Data Sources
+This study follows a discovery-validation-mechanism-translation framework:
 
-| Dataset | n | Source | Accession |
-|---------|---|--------|-----------|
-| TCGA-SARC | 50 | The Cancer Genome Atlas | https://portal.gdc.cancer.gov/ |
-| GSE21122 | 158 | Gene Expression Omnibus | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21122 |
-| GSE159659 | 45 | Gene Expression Omnibus | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159659 |
+- **Stage 1**: Data preparation and cohort overview
+- **Stage 2**: Prognostic model development and validation
+- **Stage 3**: Biological mechanism (PPARG/CD36 pathway, immune landscape)
+- **Stage 4**: Clinical translation (nomogram, external validation)
 
-## Core Genes
-The six-gene lipid metabolism score comprises: **FASN**, **ACLY**, **SCD**, **SREBF1**, **HMGCR**, and **PPARG**.
+## Key Questions Addressed
 
-## Repository Structure
-
-```
-├── scripts/              # All analysis scripts (Figures 1-6 + Supplementary)
-├── results/
-│   ├── figures/          # Main and supplementary figures (PDF/PNG/TIFF)
-│   └── tables/           # Supplementary tables (S1-S4) + Key Resources Table
-├── raw/                  # Processed expression matrices and metadata
-├── data/                 # Final gene lists and pathway results
-├── sessionInfo.txt       # R session information
-├── .gitignore
-└── README.md
-```
-
-## Requirements
-
-- **R** >= 4.2.0
-- R packages are documented in `sessionInfo.txt`
+| Question | Script | Key Result |
+|----------|--------|------------|
+| Can the score independently predict prognosis? | stage2_prognostic_model | HR=5.83, P<0.01 (male) |
+| What is the biological basis of the score? | stage3_mechanism | PPARG/CD36 pathway activation |
+| How does the score affect immune microenvironment? | stage3_mechanism | Immune suppression |
+| Is the score stable across independent cohorts? | stage4_clinical_translation | 3-cohort validation AUC>0.65 |
 
 ## Quick Start
 
 ```r
-# Set working directory
-setwd("path/to/Liposarcoma/2")
-
-# Run scripts in order
-source("scripts/Figure1_script.R")   # Study overview and cohort description
-source("scripts/Figure2_script.R")   # Six-gene score development
-source("scripts/Figure3_script.R")   # Survival and ROC analyses
-source("scripts/Figure4_script.R")   # Pathway enrichment and immune analysis
-source("scripts/Figure5_script.R")   # Nomogram and calibration
-source("scripts/Figure6_script.R")   # External validation
+source("MAIN_PIPELINE.R")
 ```
 
-## Supplementary Figures
+## Repository Structure
 
-```r
-source("scripts/Supplementary_Figure_S1.R")
-source("scripts/Supplementary_Figure_S2.R")
-source("scripts/Supplementary_Figure_S3.R")
-source("scripts/Supplementary_Figure_S4-S7.R")
-```
+- scripts/ — Analysis scripts organized by scientific stage
+- results/figures/ — Main and supplementary figures
+- results/tables/ — Supplementary tables
+- raw/ — Processed expression matrices
 
-## License
+## Data Sources
 
-MIT License
+| Dataset | n | Source |
+|---------|---|--------|
+| TCGA-SARC | 50 | https://portal.gdc.cancer.gov/ |
+| GSE21122 | 158 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21122 |
+| GSE159659 | 45 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159659 |
 
 ## Citation
 
-If you use this code or data, please cite: [Manuscript citation - to be added upon publication]
+[To be updated upon publication]
