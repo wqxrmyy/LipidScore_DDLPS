@@ -1,0 +1,6 @@
+Cohort,SampleSize,Platform,Source,Status
+TCGA-SARC,50,RNA-seq,https://portal.gdc.cancer.gov/,Existing
+GSE21122,158,Affymetrix,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21122,Existing
+GSE159659,45,RNA-seq,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159659,Existing
+GSE30929,140,Affymetrix,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30929,To be added
+ICGC-SARC,NA,RNA-seq,https://dcc.icgc.org/,To be added
