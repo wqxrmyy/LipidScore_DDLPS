@@ -1,0 +1,20 @@
+GSE30929 External Validation (n=140, all liposarcoma subtypes)
+===========================================================
+Call:
+coxph(formula = Surv(OS_time, OS_status) ~ ScoreGroup, data = clinical_all)
+
+  n= 140, number of events= 49 
+
+                coef exp(coef) se(coef)     z Pr(>|z|)    
+ScoreGroupLow 1.1338    3.1073   0.3252 3.487 0.000489 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+              exp(coef) exp(-coef) lower .95 upper .95
+ScoreGroupLow     3.107     0.3218     1.643     5.877
+
+Concordance= 0.629  (se = 0.035 )
+Likelihood ratio test= 13.83  on 1 df,   p=2e-04
+Wald test            = 12.16  on 1 df,   p=5e-04
+Score (logrank) test = 13.5  on 1 df,   p=2e-04
+

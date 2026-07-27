@@ -1,0 +1,5 @@
+"Cohort","N","Events","HR","HR_lower","HR_upper","P_value","AUC_1yr","AUC_3yr","AUC_5yr","Endpoint"
+"TCGA-SARC",50,NA,5.83,1.55,21.95,"<0.01",0.72,0.68,0.65,"OS"
+"GSE21122",158,NA,NA,NA,NA,NA,NA,NA,NA,"OS"
+"GSE159659",45,NA,NA,NA,NA,NA,NA,NA,NA,"OS"
+"GSE30929",140,49,3.11,1.64,5.88,"0.00049",NA,NA,NA,"DFS"
