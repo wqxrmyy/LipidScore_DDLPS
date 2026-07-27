@@ -1,0 +1,5 @@
+"Cohort","N","Usage","HR","P_value","Endpoint"
+"TCGA-SARC",50,"Training + OS validation","5.83 (male)","<0.01","OS"
+"GSE21122",158,"Expression validation","N/A","N/A","N/A"
+"GSE159659",45,"Expression validation","N/A","N/A","N/A"
+"GSE30929",140,"External DFS validation","3.11 (all subtypes)","0.00049","DFS"
