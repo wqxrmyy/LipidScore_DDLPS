@@ -1,0 +1,8 @@
+"Cohort","n","Platform","Endpoint","HR..95..CI.","P.value","C.index"
+"TCGA-SARC",50,"RNA-seq","OS","5.83 (1.55–21.95)","<0.01","0.72"
+"GSE21122",158,"Affymetrix","—","—","—","—"
+"GSE159659",45,"RNA-seq","—","—","—","—"
+"GSE30929 (all subtypes)",140,"Affymetrix","DFS","3.11 (1.64–5.88)","0.00049","0.629"
+"GSE30929 – DDLPS subset",40,"Affymetrix","DFS","0.52 (0.23–1.22)","0.13","—"
+"GSE30929 – Pleomorphic subset",20,"Affymetrix","DFS","0.48 (0.19–1.21)","0.09","—"
+"Total",393,"—","OS + DFS","—","—","—"
