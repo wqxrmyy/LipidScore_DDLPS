@@ -1,0 +1,211 @@
+#Patient Identifier	Short Histology	Diagnosis Age	Year Cancer Initial Diagnosis	Sex	Prior Cancer Diagnosis Occurence	Surgical Margin Resection Status	Did patient start adjuvant postoperative radiotherapy?	Adjuvant Postoperative Pharmaceutical Therapy Administered Indicator	Person Neoplasm Status	Overall Survival Status	Disease-specific Survival status	Overall Survival (Months)	New tumor event dx indicator	New Tumor Event Less Initial Pathologic Diagnosis Date Calculated Day Value	Disease Free Status	Disease Free (Months)	treatment outcome at tcga followup	Local Recurrence	Local Recurrence (months)	Distant Recurrence	Distant Recurrence Site	Months to Distant Recurrence	Country	Leiomyo major vessel involvement	Mitotic Rate	Percent Necrosis	Disease multifocal indicator
+#Identifier to uniquely specify a patient.	Short Histology	Age at which a condition or disease was first diagnosed.	Numeric value to represent the year of an individual's initial pathologic diagnosis of cancer.	Sex	Text term to describe the patient's history of prior cancer diagnosis and the spatial location of any previous cancer occurrence.	Text terms to describe the status of a tissue margin following surgical resection.	A yes/no indicator that asks whether the patient started adjuvant postoperative radiotherapy.	Indicator to signify whether or not whether the patient had adjuvant/post-operative pharmaceutical therapy.	The state or condition of an individual's neoplasm at a particular point in time.	Overall patient survival status.	The time period usually begins at the time of diagnosis or at the start of treatment and ends at the time of death.	Overall survival in months since initial diagonosis.	New tumor event dx indicator	Time interval from the date of new tumor event including progression, recurrence and new primary malignacies to the date of initial pathologic diagnosis, represented as a calculated number of days.	Disease free status since initial treatment.	Disease free (months) since initial treatment.	treatment outcome at tcga followup	Local recurrence.	Local recurrence (months).	Distant recurrence.	Distant Recurrence Site	Months to distant recurrence.	Country of procurement.	Leiomyosarcoma major vessel involvement	Mitotic Rate	Percent necrosis.	Disease multifocal indicator
+#STRING	STRING	NUMBER	NUMBER	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	NUMBER	STRING	NUMBER	STRING	NUMBER	STRING	STRING	NUMBER	STRING	STRING	NUMBER	STRING	STRING	NUMBER	NUMBER	STRING
+#1	1	1	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+PATIENT_ID	SHORT_HISTOLOGY	AGE	INITIAL_PATHOLOGIC_DX_YEAR	SEX	HISTORY_OTHER_MALIGNANCY	RESIDUAL_TUMOR	RADIATION_TREATMENT_ADJUVANT	PHARMACEUTICAL_TX_ADJUVANT	TUMOR_STATUS	OS_STATUS	DSS_STATUS	OS_MONTHS	NEW_TUMOR_EVENT_DX_INDICATOR	DAYS_TO_NEW_TUMOR_EVENT	DFS_STATUS	DFS_MONTHS	TREATMENT_OUTCOME_AT_TCGA_FOLLOWUP	LOCAL_RECURRENCE	LOCAL_RECURRENCE_MONTHS	DISTANT_RECURRENCE	DISTANT_RECURRENCE_SITE	MONTHS_TO_DISTANT_RECURRENCE	COUNTRY	LEIOMYO_MAJOR_VESSEL_INVOLVEMENT	MITOTIC_RATE	PERCENTAGE_NECROSIS	DISEASE_MULTIFOCAL_INDICATOR
+TCGA-3B-A9HL	DDLPS	67	2011	Male	No	R1	NO	YES	TUMOR FREE	1:DECEASED	0.0	19.7	YES	229.0	1:Recurred/Progressed	7.5		Locoregional Recurrence	7.5	Distant Metastasis	Lung	7.532894737	United States		7		NO
+TCGA-3B-A9HO	DDLPS	75	2012	Male	Yes	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	31.5	YES	595.0	1:Recurred/Progressed	19.6	Complete Response			New Primary Tumor	Abdominal Wall	19.57236842	United States		2		NO
+TCGA-3B-A9HS	DDLPS	60	2008	Male	No	R0	YES	YES	WITH TUMOR	1:DECEASED	1.0	44.9	YES	139.0	1:Recurred/Progressed	4.6		Locoregional Recurrence	4.6	Distant Metastasis	Pelvis	5.921052632	United States	No Major Vessel Involvement	4	30.0	YES
+TCGA-3R-A8YX	DDLPS	66	2013	Male	No	R2	NO	NO	WITH TUMOR	1:DECEASED	1.0	0.6	NO		1:Recurred/Progressed	0.6							United States		22		YES
+TCGA-DX-A1KU	DDLPS	82	2010	Male	No	R2	NO	NO	WITH TUMOR	1:DECEASED	1.0	14.0	YES	94.0	1:Recurred/Progressed	3.1	Progressive Disease			Distant Metastasis	Abdomen	3.092105263	United States		2		YES
+TCGA-DX-A1KW	DDLPS	67	2009	Male	No	R1	NO	NO	[Unknown]	1:DECEASED		32.7	NO		1:Recurred/Progressed	32.7	Complete Response						United States		1		NO
+TCGA-DX-A1KY	DDLPS	66	2009	Male	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	12.9	YES	205.0	1:Recurred/Progressed	6.7	Progressive Disease			Distant Metastasis	[Not Available]	6.743421053	United States		1		NO
+TCGA-DX-A1KZ	DDLPS	66	2009	Male	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	45.1	YES	1294.0	1:Recurred/Progressed	42.6		Locoregional Recurrence	42.6				United States		1		NO
+TCGA-DX-A1L0	DDLPS	58	2008	Male	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	18.6	NO		1:Recurred/Progressed	18.6	Progressive Disease	Locoregional Recurrence	3.4				United States		6		NO
+TCGA-DX-A1L1	DDLPS	60	2008	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	54.2	NO		1:Recurred/Progressed	54.2	Progressive Disease	Locoregional Recurrence	11.5	Distant Metastasis	Liver	18.84868421	United States		5		YES
+TCGA-DX-A1L3	DDLPS	60	2009	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	33.6	YES	437.0	1:Recurred/Progressed	14.4	Progressive Disease	Locoregional Recurrence	14.4	Distant Metastasis	[Not Available]	16.94078947	United States		7		NO
+TCGA-DX-A1L4	DDLPS	60	2009	Male	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	67.0	YES	340.0	1:Recurred/Progressed	11.2		Locoregional Recurrence	11.2				United States		2		NO
+TCGA-DX-A23R	DDLPS	55	2002	Female	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	74.7	NO		0:DiseaseFree	74.7	Complete Response						United States		5		NO
+TCGA-DX-A23T	DDLPS	40	2006	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	5.3	YES	104.0	1:Recurred/Progressed	3.4	Progressive Disease	Locoregional Recurrence	3.4				United States		7		NO
+TCGA-DX-A23V	DDLPS	57	2003	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	66.9	NO		1:Recurred/Progressed	66.9	Progressive Disease	Locoregional Recurrence	12.4				United States		3		YES
+TCGA-DX-A23Y	DDLPS	80	2006	Male	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	6.3	YES	172.0	1:Recurred/Progressed	5.7	Progressive Disease	Locoregional Recurrence	5.7				United States		16		YES
+TCGA-DX-A240	DDLPS	51	2006	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	60.3	NO		0:DiseaseFree	60.3	Complete Response						United States		5		NO
+TCGA-DX-A2IZ	DDLPS	60	2007	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	8.6	NO		0:DiseaseFree	8.6	Complete Response						United States		2		NO
+TCGA-DX-A2J0	DDLPS	61	2005	Male	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	9.7	YES	213.0	1:Recurred/Progressed	7.0	Progressive Disease	Locoregional Recurrence	7.0				United States		1		NO
+TCGA-DX-A2J1	DDLPS	53	2007	Male	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	95.4	NO		0:DiseaseFree	95.4							United States		1		NO
+TCGA-DX-A2J4	DDLPS	60	2008	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	79.2	NO		0:DiseaseFree	79.2							United States		1		
+TCGA-DX-A3LS	DDLPS	78	2011	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	9.0	YES	114.0	1:Recurred/Progressed	3.8	Progressive Disease			Distant Metastasis	Lung	3.75	United States		13		YES
+TCGA-DX-A3LT	DDLPS	62	2011	Male	No	R0	YES	NO	WITH TUMOR	0:LIVING	0.0	49.1	YES	568.0	1:Recurred/Progressed	18.7		Locoregional Recurrence	18.7				United States		2		NO
+TCGA-DX-A3LU	DDLPS	60	2007	Male	No	R1	YES	NO	TUMOR FREE	0:LIVING	0.0	86.9	YES	290.0	1:Recurred/Progressed	9.5	Complete Response	Locoregional Recurrence	9.5				United States		1		NO
+TCGA-DX-A3LW	DDLPS	43	2004	Male	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	136.5	YES	1125.0	1:Recurred/Progressed	37.0		Locoregional Recurrence	37.0				United States		4		NO
+TCGA-DX-A3LY	DDLPS	66	2011	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	33.5	NO		0:DiseaseFree	33.5	Complete Response						United States		7		NO
+TCGA-DX-A3M1	DDLPS	79	2010	Male	No	R2	NO	NO	WITH TUMOR	0:LIVING	0.0	44.7	YES	1212.0	1:Recurred/Progressed	39.9	Progressive Disease	Locoregional Recurrence	39.9				United States		3		YES
+TCGA-DX-A3U5	DDLPS	52	2011	Male	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	31.9	NO		0:DiseaseFree	31.9	Complete Response						United States		7		NO
+TCGA-DX-A3U6	DDLPS	63	2011	Female	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	35.8	YES	160.0	1:Recurred/Progressed	5.3	Progressive Disease	Locoregional Recurrence	5.3				United States		5		NO
+TCGA-DX-A48N	DDLPS	47	2012	Male	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	35.3	NO		0:DiseaseFree	35.3							United States		2		YES
+TCGA-DX-A6BE	DDLPS	77	2011	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	29.0	NO		0:DiseaseFree	29.0	Complete Response						United States		5	0.0	NO
+TCGA-DX-A6BF	DDLPS	82	2012	Female	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	32.0	YES	947.0	1:Recurred/Progressed	31.2		Locoregional Recurrence	31.2				United States		12	25.0	YES
+TCGA-DX-A6BG	DDLPS	51	2012	Male	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	36.9	YES	149.0	1:Recurred/Progressed	4.9		Locoregional Recurrence	4.9	Distant Metastasis	Peritoneum	17.03947368	United States		5		YES
+TCGA-DX-A6BH	DDLPS	34	2012	Male	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	27.0	YES	232.0	1:Recurred/Progressed	7.6		Locoregional Recurrence	7.6				United States		5		NO
+TCGA-DX-A7EI	DDLPS	78	2003	Female	No	R1	NO	YES	WITH TUMOR	1:DECEASED	1.0	34.5	YES	828.0	1:Recurred/Progressed	27.2		Locoregional Recurrence	27.2				United States		3		YES
+TCGA-DX-A7ES	DDLPS	50	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	20.1	NO		0:DiseaseFree	20.1	Complete Response						United States		1		YES
+TCGA-DX-AB2F	DDLPS	76	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	12.0	NO		0:DiseaseFree	12.0	Complete Response						United States		4	25.0	NO
+TCGA-DX-AB2G	DDLPS	36	2013	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	15.7	NO		0:DiseaseFree	15.7	Complete Response						United States		2	20.0	YES
+TCGA-DX-AB2H	DDLPS	80	2013	Female	Yes	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	15.9	NO		0:DiseaseFree	15.9	Complete Response						United States		12		YES
+TCGA-DX-AB2S	DDLPS	53	2005	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	9.2	NO		0:DiseaseFree	9.2	Complete Response						United States		2		NO
+TCGA-DX-AB35	DDLPS	65	2012	Male	Yes	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	30.5	YES	284.0	1:Recurred/Progressed	9.3	Progressive Disease	Locoregional Recurrence	9.3				United States		6		YES
+TCGA-DX-AB36	DDLPS	86	2008	Male	Yes	R1	NO	NO	[Unknown]	1:DECEASED		60.0	NO		1:Recurred/Progressed	60.0							United States		11		NO
+TCGA-DX-AB37	DDLPS	73	2003	Female	Yes	R0	NO	NO	[Unknown]	1:DECEASED		84.7	NO		1:Recurred/Progressed	84.7							United States		12		NO
+TCGA-DX-AB3A	DDLPS	80	2009	Male	Yes	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	32.2	YES	533.0	1:Recurred/Progressed	17.5		Locoregional Recurrence	17.5	Distant Metastasis	Lung	25.82236842	United States		23		NO
+TCGA-FX-A2QS	DDLPS	61	2011	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	49.2	NO		0:DiseaseFree	49.2							United States		30	40.0	NO
+TCGA-FX-A3NK	DDLPS	53	2011	Male	Yes	R0	NO	NO	[Unknown]	0:LIVING	0.0	16.6	NO		0:DiseaseFree	16.6							United States		1		YES
+TCGA-HB-A3YV	DDLPS	75	2012	Male	No	R1	YES	NO	WITH TUMOR	1:DECEASED	1.0	4.6	NO		1:Recurred/Progressed	4.6							United States		21		NO
+TCGA-PC-A5DN	DDLPS	77	2005	Female	No	R1	NO	NO	TUMOR FREE	1:DECEASED	0.0	38.7	NO		1:Recurred/Progressed	38.7							United States	[Unknown]	3		NO
+TCGA-SG-A6Z7	DDLPS	44	2004	Female	No	RX	NO	NO	TUMOR FREE	1:DECEASED	0.0	3.9	NO		1:Recurred/Progressed	3.9							United States		15		[Unknown]
+TCGA-WK-A8XO	DDLPS	66	2010	Female	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	11.9	NO		1:Recurred/Progressed	11.9		Locoregional Recurrence	3.5				United States		40		YES
+TCGA-KF-A41W	ULMS	71	2012	Female	Yes	RX	NO	YES	TUMOR FREE	0:LIVING	0.0	11.7	NO		0:DiseaseFree	11.7	Complete Response						United States	No Major Vessel Involvement	10		NO
+TCGA-3B-A9HP	ULMS	57	2007	Female	No	R1	YES	YES	WITH TUMOR	1:DECEASED	1.0	53.5	YES	517.0	1:Recurred/Progressed	17.0				Distant Metastasis	Lung	17.00657895	United States	No Major Vessel Involvement	7	25.0	NO
+TCGA-3B-A9HQ	STLMS	66	2007	Female	No	R0	[Unknown]	[Unknown]	[Unknown]	0:LIVING	0.0	68.6	NO		0:DiseaseFree	68.6	Complete Response						United States	No Major Vessel Involvement	10	5.0	NO
+TCGA-3B-A9HR	STLMS	38	2007	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	88.6	YES	496.0	1:Recurred/Progressed	16.3	Progressive Disease			Distant Metastasis	Lung	16.31578947	United States	No Major Vessel Involvement	6	15.0	NO
+TCGA-3B-A9HT	STLMS	53	2010	Male	No	R0	YES	YES	TUMOR FREE	0:LIVING	0.0	54.8	YES	670.0	1:Recurred/Progressed	22.0	Complete Response			New Primary Tumor	Liver	22.03947368	United States	No Major Vessel Involvement	12		NO
+TCGA-3B-A9HU	STLMS	53	2010	Female	No	R0	[Unknown]	[Unknown]	WITH TUMOR	0:LIVING	0.0	25.3	YES	631.0	1:Recurred/Progressed	20.8	Progressive Disease			Distant Metastasis	Lung	20.75657895	United States	No Major Vessel Involvement	6	10.0	NO
+TCGA-3B-A9HV	ULMS	48	2010	Female	No	RX	NO	YES	WITH TUMOR	1:DECEASED	1.0	14.4	YES	41.0	1:Recurred/Progressed	1.3				Distant Metastasis	Lung	1.348684211	United States	No Major Vessel Involvement	20	15.0	YES
+TCGA-3B-A9HX	STLMS	70	2011	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	42.9	NO		0:DiseaseFree	42.9	Complete Response						United States	No Major Vessel Involvement	20	49.0	YES
+TCGA-3B-A9HY	STLMS	49	2011	Male	No	R0	[Unknown]	[Unknown]	TUMOR FREE	0:LIVING	0.0	10.3	NO		0:DiseaseFree	10.3	Complete Response						United States	No Major Vessel Involvement	12		NO
+TCGA-3B-A9HZ	STLMS	66	2011	Male	No	R1	YES	YES	WITH TUMOR	0:LIVING	0.0	38.5	YES	309.0	1:Recurred/Progressed	10.2	Progressive Disease			Distant Metastasis	Lung	10.16447368	United States	No Major Vessel Involvement	8	20.0	NO
+TCGA-3B-A9I0	STLMS	33	2011	Male	No	R0	NO	YES	WITH TUMOR	0:LIVING	0.0	36.1	YES	503.0	1:Recurred/Progressed	16.5	Progressive Disease			Distant Metastasis	Liver	16.54605263	United States	No Major Vessel Involvement	6	20.0	NO
+TCGA-3B-A9I1	ULMS	56	2012	Female	No	RX	NO	YES	WITH TUMOR	1:DECEASED	1.0	18.7	YES	192.0	1:Recurred/Progressed	6.3				Distant Metastasis	Pelvis	6.315789474	United States	No Major Vessel Involvement	2	10.0	YES
+TCGA-3B-A9I3	STLMS	62	2012	Male	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	26.6	YES	87.0	1:Recurred/Progressed	2.9	Complete Response			New Primary Tumor	Axillary Lymph Node	2.861842105	United States	No Major Vessel Involvement	10		NO
+TCGA-DX-A3U7	STLMS	67	2009	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	51.1	YES	349.0	1:Recurred/Progressed	11.5	Progressive Disease			Distant Metastasis	Lung	11.48026316	United States	No Major Vessel Involvement	12		NO
+TCGA-DX-A3U9	STLMS	84	2005	Male	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	15.0	YES	203.0	1:Recurred/Progressed	6.7	Progressive Disease	Locoregional Recurrence	6.7	Distant Metastasis	Pelvis	11.05263158	United States	No Major Vessel Involvement	10		
+TCGA-DX-A3UA	STLMS	47	2009	Female	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	10.7	NO		1:Recurred/Progressed	10.7	Complete Response						United States	No Major Vessel Involvement	7		NO
+TCGA-DX-A3UB	STLMS	54	2009	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	73.9	NO		0:DiseaseFree	73.9							United States	No Major Vessel Involvement	3		NO
+TCGA-DX-A3UC	STLMS	37	2009	Female	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	68.6	YES	176.0	1:Recurred/Progressed	5.8				Distant Metastasis	Lung	5.789473684	United States	Inferior vena cava	11		NO
+TCGA-DX-A3UD	STLMS	56	2010	Male	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	50.5	YES	603.0	1:Recurred/Progressed	19.8	Progressive Disease	Locoregional Recurrence	19.8	Distant Metastasis	Liver	19.83552632	United States	Renal vein	12		YES
+TCGA-DX-A3UE	STLMS	66	2007	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	34.9	YES	224.0	1:Recurred/Progressed	7.4	Progressive Disease			Distant Metastasis	Lung	7.368421053	United States	No Major Vessel Involvement	8		NO
+TCGA-DX-A3UF	STLMS	65	2007	Female	No	R1	NO	YES	WITH TUMOR	1:DECEASED	1.0	85.5	YES	964.0	1:Recurred/Progressed	31.7	Progressive Disease	Locoregional Recurrence	31.7	Distant Metastasis	Retroperitoneum	31.71052632	United States	Inferior vena cava	10		YES
+TCGA-DX-A48J	STLMS	44	2003	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	9.7	YES	97.0	1:Recurred/Progressed	3.2	Progressive Disease	Locoregional Recurrence	3.2	Distant Metastasis	Lung	3.223684211	United States	No Major Vessel Involvement	5		
+TCGA-DX-A48K	STLMS	65	2011	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	46.0	NO		0:DiseaseFree	46.0							United States	No Major Vessel Involvement	20		NO
+TCGA-DX-A48L	STLMS	49	2010	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	24.3	YES	316.0	1:Recurred/Progressed	10.4	Progressive Disease			Distant Metastasis	Lung	10.39473684	United States	No Major Vessel Involvement	7		NO
+TCGA-DX-A48O	STLMS	63	2010	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	52.8	NO		0:DiseaseFree	52.8							United States	No Major Vessel Involvement	1		NO
+TCGA-DX-A48P	STLMS	54	2011	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	46.1	NO		0:DiseaseFree	46.1	Complete Response						United States	No Major Vessel Involvement	2		NO
+TCGA-DX-A48R	STLMS	41	2002	Male	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	26.5	YES	315.0	1:Recurred/Progressed	10.4	Progressive Disease	Locoregional Recurrence	10.4	Distant Metastasis	Liver	10.36184211	United States	Pelvic vein,common,external, or iliac	2		NO
+TCGA-DX-A48U	STLMS	57	2005	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	108.9	NO		0:DiseaseFree	108.9							United States	No Major Vessel Involvement	3		NO
+TCGA-DX-A6B7	STLMS	55	2012	Male	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	37.6	NO		0:DiseaseFree	37.6							United States	No Major Vessel Involvement	1	20.0	NO
+TCGA-DX-A6B9	STLMS	45	2012	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	37.4	NO		0:DiseaseFree	37.4							United States	No Major Vessel Involvement	1	0.0	NO
+TCGA-DX-A6BA	STLMS	53	2008	Female	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	82.7	YES	408.0	1:Recurred/Progressed	13.4		Locoregional Recurrence	13.4	Distant Metastasis	Lung	33.22368421	United States	No Major Vessel Involvement	28	15.0	NO
+TCGA-DX-A6BB	STLMS	74	2012	Male	No	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	36.3	NO		0:DiseaseFree	36.3							United States	No Major Vessel Involvement	8	15.0	NO
+TCGA-DX-A6Z2	STLMS	82	2007	Female	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	101.3	YES	2659.0	1:Recurred/Progressed	87.5				Distant Metastasis	Lung	87.46710526	United States	Renal vein	1	50.0	NO
+TCGA-DX-A7EL	STLMS	56	2007	Female	Yes	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	75.4	YES	2249.0	1:Recurred/Progressed	74.0	Complete Response			Distant Metastasis	Lung	73.98026316	United States	Inferior vena cava	2		NO
+TCGA-DX-A7EM	STLMS	61	2010	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	62.2	NO		0:DiseaseFree	62.2							United States	No Major Vessel Involvement	11		NO
+TCGA-DX-A7EN	STLMS	53	2012	Female	No	R0	NO	YES	WITH TUMOR	0:LIVING	0.0	30.4	YES	352.0	1:Recurred/Progressed	11.6				Distant Metastasis	Lung	11.57894737	United States	No Major Vessel Involvement	40	10.0	NO
+TCGA-FX-A3NJ	STLMS	54	2011	Male	No	R0	[Unknown]	[Unknown]	TUMOR FREE	0:LIVING	0.0	31.2	NO		0:DiseaseFree	31.2	Complete Response						United States	No Major Vessel Involvement	5		NO
+TCGA-FX-A3RE	ULMS	65	2011	Female	No	RX	NO	YES	TUMOR FREE	0:LIVING	0.0	21.7	NO		0:DiseaseFree	21.7	Complete Response						United States	[Unknown]	12		YES
+TCGA-FX-A48G	ULMS	56	2011	Female	No	RX	NO	YES	WITH TUMOR	1:DECEASED	1.0	19.9	YES	168.0	1:Recurred/Progressed	5.5	Progressive Disease			Distant Metastasis	Lung	5.526315789	United States	No Major Vessel Involvement	7		YES
+TCGA-FX-A76Y	ULMS	49	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	15.5	NO		0:DiseaseFree	15.5	Complete Response						United States	No Major Vessel Involvement	8		NO
+TCGA-HB-A3L4	ULMS	46	2009	Female	No	R0	NO	YES	WITH TUMOR	1:DECEASED	1.0	34.9	YES	326.0	1:Recurred/Progressed	10.7	Progressive Disease			Distant Metastasis	Lung	10.72368421	United States	No Major Vessel Involvement	90		NO
+TCGA-HB-A43Z	ULMS	58	2012	Female	Yes	R0	YES	YES	WITH TUMOR	0:LIVING	0.0	37.0	YES	894.0	1:Recurred/Progressed	29.4				Distant Metastasis	Lung	29.40789474	United States	No Major Vessel Involvement	21		NO
+TCGA-HB-A5W3	STLMS	58	2010	Female	Yes	R0	NO	YES	WITH TUMOR	1:DECEASED	1.0	12.6	NO		1:Recurred/Progressed	12.6							United States	No Major Vessel Involvement	3		NO
+TCGA-HS-A5N7	STLMS	67	2010	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	33.3	NO		0:DiseaseFree	33.3	Complete Response						Canada	No Major Vessel Involvement	6		NO
+TCGA-HS-A5N8	ULMS	69	2010	Female	No	R2	NO	NO	[Unknown]	1:DECEASED		0.7	NO		1:Recurred/Progressed	0.7	Partial Response						Canada	[Unknown]	6		NO
+TCGA-IE-A3OV	STLMS	42	2004	Male	No	R0	NO	YES	WITH TUMOR	1:DECEASED	1.0	80.5	YES	1371.0	1:Recurred/Progressed	45.1	Progressive Disease	Locoregional Recurrence	45.1	Distant Metastasis	Lung	16.11842105	United States	No Major Vessel Involvement	15	1.0	NO
+TCGA-IE-A4EH	ULMS	35	2011	Female	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	26.9	NO		0:DiseaseFree	26.9	Complete Response						United States	[Unknown]	16		NO
+TCGA-IE-A4EI	STLMS	67	2012	Female	No	R0	NO	NO	[Unknown]	0:LIVING	0.0	19.5	NO		0:DiseaseFree	19.5							United States	No Major Vessel Involvement	12		NO
+TCGA-IE-A4EK	STLMS	54	2012	Male	No	R1	[Unknown]	[Unknown]	[Unknown]	0:LIVING	0.0	1.4	NO		0:DiseaseFree	1.4	Complete Response						United States	Renal vein	3		NO
+TCGA-IF-A4AJ	STLMS	80	1995	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	25.2	YES	560.0	1:Recurred/Progressed	18.4				Distant Metastasis	Lung	18.42105263	United States	No Major Vessel Involvement	12	15.0	NO
+TCGA-IS-A3K6	ULMS	55	2000	Female	Yes	R2	[Unknown]	[Unknown]	WITH TUMOR	1:DECEASED	1.0	28.2	NO		1:Recurred/Progressed	28.2	Progressive Disease						United States	No Major Vessel Involvement	5		YES
+TCGA-IS-A3K7	ULMS	63	2000	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	171.2	YES	119.0	1:Recurred/Progressed	3.9				Distant Metastasis	Lung	3.914473684	United States	No Major Vessel Involvement	17		YES
+TCGA-IW-A3M4	ULMS	48	2005	Female	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	86.0	YES	2207.0	1:Recurred/Progressed	72.6	Complete Response						United States	No Major Vessel Involvement	10		NO
+TCGA-IW-A3M6	ULMS	59	2011	Female	Yes	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	22.6	NO		0:DiseaseFree	22.6	Complete Response						United States	No Major Vessel Involvement	6		NO
+TCGA-JV-A5VE	ULMS	60	2012	Female	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	16.4	NO		0:DiseaseFree	16.4	Complete Response						United States	No Major Vessel Involvement	16	15.0	NO
+TCGA-JV-A75J	ULMS	43	2013	Female	No	R2	NO	YES	WITH TUMOR	1:DECEASED	1.0	3.9	NO		1:Recurred/Progressed	3.9							United States	No Major Vessel Involvement	68		YES
+TCGA-K1-A3PN	ULMS	64	2006	Female	No	R0	YES	YES	TUMOR FREE	0:LIVING	0.0	101.3	YES	1033.0	1:Recurred/Progressed	34.0	Complete Response						United States	No Major Vessel Involvement	13		NO
+TCGA-K1-A3PO	STLMS	42	2010	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	53.4	NO		0:DiseaseFree	53.4	Complete Response						United States	No Major Vessel Involvement	1		NO
+TCGA-K1-A42W	STLMS	65	2009	Female	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	62.2	YES	826.0	1:Recurred/Progressed	27.2	Progressive Disease			Distant Metastasis	Liver	27.17105263	United States	No Major Vessel Involvement	6		
+TCGA-K1-A42X	ULMS	62	2003	Female	No	R0	NO	YES	WITH TUMOR	0:LIVING	0.0	123.8	YES	2036.0	1:Recurred/Progressed	67.0	Progressive Disease	Locoregional Recurrence	67.0				United States	No Major Vessel Involvement	12		
+TCGA-K1-A6RV	STLMS	67	2013	Male	No	R1	YES	NO	WITH TUMOR	0:LIVING	0.0	5.2	NO		0:DiseaseFree	5.2	Progressive Disease						United States	No Major Vessel Involvement	42	80.0	NO
+TCGA-KD-A5QS	ULMS	55	2009	Female	No	RX	NO	YES	WITH TUMOR	1:DECEASED	1.0	63.8	YES	351.0	1:Recurred/Progressed	11.5	Progressive Disease			Distant Metastasis	Bone	11.54605263	United States	[Unknown]	61		[Unknown]
+TCGA-KD-A5QT	ULMS	69	2010	Female	No	R0	[Unknown]	[Unknown]	TUMOR FREE	0:LIVING	0.0	16.4	NO		0:DiseaseFree	16.4							United States	No Major Vessel Involvement	102		NO
+TCGA-KD-A5QU	ULMS	41	2010	Female	No	R0	NO	YES	WITH TUMOR	1:DECEASED	1.0	35.3	YES	1060.0	1:Recurred/Progressed	34.9	Progressive Disease			Distant Metastasis	Lung	34.86842105	United States	[Unknown]	50		[Unknown]
+TCGA-MJ-A68H	ULMS	57	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	15.0	NO		0:DiseaseFree	15.0	Complete Response						United States	No Major Vessel Involvement	17	20.0	NO
+TCGA-MO-A47R	ULMS	75	2010	Female	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	10.5	YES	259.0	1:Recurred/Progressed	8.5	Progressive Disease			Distant Metastasis	Brain	8.519736842	Vietnam	[Unknown]	7		
+TCGA-N1-A6IA	ULMS	41	2011	Female	No	RX	NO	NO	WITH TUMOR	1:DECEASED	1.0	7.4	YES	116.0	1:Recurred/Progressed	3.8	Progressive Disease			Distant Metastasis	Lung	3.815789474	United States	No Major Vessel Involvement	26		YES
+TCGA-PC-A5DK	STLMS	63	2004	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	123.0	NO		0:DiseaseFree	123.0							United States	Yes, NOS	2		NO
+TCGA-PC-A5DL	STLMS	67	2004	Male	No	RX	NO	NO	[Unknown]	1:DECEASED		37.6	NO		1:Recurred/Progressed	37.6							United States	[Unknown]	6		NO
+TCGA-PC-A5DO	STLMS	59	2006	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	81.1	NO		1:Recurred/Progressed	81.1							United States	[Unknown]	40		NO
+TCGA-QQ-A5VB	STLMS	53	1994	Female	No	R1	NO	YES	WITH TUMOR	1:DECEASED	1.0	48.6	YES	1476.0	1:Recurred/Progressed	48.6		Locoregional Recurrence	3.7	Distant Metastasis	Descending Colon	48.55263158	United States	Common or superficial femoral vein	8		NO
+TCGA-QQ-A5VC	STLMS	63	2011	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	35.9	NO		0:DiseaseFree	35.9	Complete Response						United States	No Major Vessel Involvement	31		NO
+TCGA-WK-A8XS	STLMS	58	2008	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	84.8	NO		0:DiseaseFree	84.8							United States	No Major Vessel Involvement	21		NO
+TCGA-WK-A8XX	STLMS	70	2007	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	38.3	YES	1120.0	1:Recurred/Progressed	36.8		Locoregional Recurrence	3.7	Distant Metastasis	Lung	3.651315789	United States	Renal vein	22		NO
+TCGA-WK-A8XY	STLMS	53	2007	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	65.5	YES	103.0	1:Recurred/Progressed	3.4		Locoregional Recurrence	3.4	Distant Metastasis	Lung	3.388157895	United States	No Major Vessel Involvement	17		YES
+TCGA-WP-A9GB	ULMS	59	2012	Female	No	RX	NO	NO	WITH TUMOR	1:DECEASED	1.0	8.6	YES	214.0	1:Recurred/Progressed	7.0	Progressive Disease			Distant Metastasis	Lung	7.039473684	United States	No Major Vessel Involvement	40		NO
+TCGA-X2-A95T	ULMS	49	2009	Female	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	63.4	NO		0:DiseaseFree	63.4	Complete Response						United States	No Major Vessel Involvement	21	50.0	NO
+TCGA-X6-A7WD	STLMS	63	2013	Female	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	30.9	YES	558.0	1:Recurred/Progressed	18.4				Distant Metastasis	Lung	18.35526316	United States	No Major Vessel Involvement	21		NO
+TCGA-X6-A8C5	STLMS	63	2011	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	50.9	NO		0:DiseaseFree	50.9							United States	No Major Vessel Involvement	2		NO
+TCGA-X9-A971	STLMS	52	2013	Female	No	R0	NO	YES	WITH TUMOR	0:LIVING	0.0	27.3	YES	332.0	1:Recurred/Progressed	10.9				Distant Metastasis	Lung	7.368421053	United States	No Major Vessel Involvement	18	5.0	NO
+TCGA-QQ-A8VH	MPNST	31	2010	Female	No	RX	YES	NO	WITH TUMOR	1:DECEASED	1.0	10.5	YES	197.0	1:Recurred/Progressed	6.5		Locoregional Recurrence	6.5	New Primary Tumor	C3 and C6	10.32894737	United States		11		[Unknown]
+TCGA-RN-A68Q	MPNST	62	2010	Female	No	RX	NO	NO	TUMOR FREE	0:LIVING	0.0	0.7	NO		0:DiseaseFree	0.7	Complete Response						United States		3	5.0	[Unknown]
+TCGA-SI-A71P	MPNST	50	2012	Male	No	RX	YES	YES	TUMOR FREE	0:LIVING	0.0	25.4	NO		0:DiseaseFree	25.4	Complete Response						United States		29		YES
+TCGA-SI-A71Q	MPNST	34	2012	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	32.8	NO		0:DiseaseFree	32.8	Complete Response						United States		14	0.0	NO
+TCGA-SI-AA8C	MPNST	20	2013	Female	No	R1	YES	YES	WITH TUMOR	0:LIVING	0.0	19.6	YES	273.0	1:Recurred/Progressed	9.0	Stable Disease			Distant Metastasis	Lung	8.980263158	United States		4		NO
+TCGA-DX-A6YQ	MFS	86	2011	Female	No	R0	NO	NO	TUMOR FREE	1:DECEASED	0.0	3.1	NO		1:Recurred/Progressed	3.1							United States		21	25.0	NO
+TCGA-DX-A6YR	MFS	75	2011	Male	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	41.0	NO		0:DiseaseFree	41.0							United States		12		NO
+TCGA-DX-A6YU	MFS	50	2012	Female	Yes	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	34.4	NO		0:DiseaseFree	34.4							United States		10	5.0	NO
+TCGA-DX-A6YX	MFS	68	2005	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	16.9	YES	200.0	1:Recurred/Progressed	6.6				Distant Metastasis	Lung	6.578947368	United States		15		NO
+TCGA-DX-A6Z0	MFS	78	2006	Female	No	R1	YES	NO	TUMOR FREE	1:DECEASED	0.0	64.2	NO		1:Recurred/Progressed	64.2							United States		11		NO
+TCGA-DX-A8BH	MFS	86	2013	Male	Yes	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	14.4	YES	272.0	1:Recurred/Progressed	8.9	Progressive Disease			Distant Metastasis	Pleura	8.947368421	United States		9	10.0	NO
+TCGA-DX-A8BL	MFS	59	2011	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	45.2	NO		0:DiseaseFree	45.2	Complete Response						United States		3	5.0	NO
+TCGA-DX-A8BR	MFS	63	2002	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	150.4	NO		0:DiseaseFree	150.4	Complete Response						United States		8		NO
+TCGA-DX-A8BV	MFS	57	2004	Male	No	R0	YES	YES	WITH TUMOR	1:DECEASED	1.0	60.7	YES	357.0	1:Recurred/Progressed	11.7		Locoregional Recurrence	11.7	Distant Metastasis	Liver	18.84868421	United States		3		NO
+TCGA-DX-AB2E	MFS	60	2013	Male	No	R0	NO	NO	WITH TUMOR	0:LIVING	0.0	17.8	YES	132.0	1:Recurred/Progressed	4.3	Progressive Disease			Distant Metastasis	Intercardiac	4.3421052630000005	United States		21	15.0	NO
+TCGA-DX-AB2T	MFS	54	2008	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	77.9	YES	784.0	1:Recurred/Progressed	25.8	Complete Response			Distant Metastasis	Lung	25.78947368	United States		21		NO
+TCGA-DX-AB2V	MFS	81	2006	Male	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	106.6	NO		0:DiseaseFree	106.6	Complete Response						United States		20		NO
+TCGA-DX-AB2X	MFS	73	2010	Female	Yes	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	13.3	YES	111.0	1:Recurred/Progressed	3.7		Locoregional Recurrence	3.7	Distant Metastasis	Lung	7.171052632	United States		25	20.0	NO
+TCGA-IE-A6BZ	MFS	65	2012	Female	No	R0	NO	YES	[Unknown]	0:LIVING	0.0	19.9	NO		0:DiseaseFree	19.9							United States		15	30.0	NO
+TCGA-MJ-A68J	MFS	55	2012	Female	No	R1	YES	NO	[Unknown]	0:LIVING	0.0	18.0	YES	268.0	1:Recurred/Progressed	8.8	Complete Response			New Primary Tumor	Foot	8.815789473999999	United States		1		NO
+TCGA-X6-A7W8	MFS	89	2011	Male	No	R1	YES	NO	WITH TUMOR	1:DECEASED	1.0	26.4	YES	146.0	1:Recurred/Progressed	4.8				Distant Metastasis	Lung	4.802631579	United States		50	30.0	NO
+TCGA-X6-A8C3	MFS	59	2013	Female	No	R1	YES	NO	TUMOR FREE	0:LIVING	0.0	19.2	NO		0:DiseaseFree	19.2							United States		50	30.0	NO
+TCGA-DX-A7EO	SS	20	2002	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	152.2	NO		0:DiseaseFree	152.2							United States		23		NO
+TCGA-DX-A7EQ	SS	72	2006	Male	No	R0	YES	YES	WITH TUMOR	1:DECEASED	1.0	29.5	YES	251.0	1:Recurred/Progressed	8.3				Distant Metastasis	Lung	8.256578947000001	United States		15	5.0	NO
+TCGA-DX-A7ER	SS	69	2008	Male	No	R0	NO	NO	TUMOR FREE	1:DECEASED	0.0	48.2	NO		1:Recurred/Progressed	48.2							United States		5	40.0	NO
+TCGA-DX-AB3B	SS	28	2009	Female	No	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	50.9	NO		0:DiseaseFree	50.9	Complete Response						United States		4		NO
+TCGA-DX-AB3C	SS	27	2008	Male	No	R0	YES	YES	WITH TUMOR	0:LIVING	0.0	71.3	YES	567.0	1:Recurred/Progressed	18.7	Progressive Disease	Locoregional Recurrence	61.1	Distant Metastasis	Lung	18.65131579	United States		30		NO
+TCGA-FX-A8OO	SS	31	2013	Female	No	R0	NO	YES	TUMOR FREE	1:DECEASED	0.0	8.1	NO		1:Recurred/Progressed	8.1	Complete Response						United States		31	10.0	NO
+TCGA-MJ-A850	SS	28	2013	Male	No	RX	YES	NO	TUMOR FREE	0:LIVING	0.0	22.4	NO		0:DiseaseFree	22.4	Complete Response						United States		16	10.0	NO
+TCGA-WK-A8XT	SS	40	2008	Female	Yes	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	41.5	YES	599.0	1:Recurred/Progressed	19.7		Locoregional Recurrence	19.7	Distant Metastasis	Lung	27.26973684	United States		50		NO
+TCGA-X6-A8C7	SS	24	2013	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	29.5	NO		0:DiseaseFree	29.5							United States		21	0.0	NO
+TCGA-Z4-AAPF	SS	35	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	16.0	NO		0:DiseaseFree	16.0	Complete Response						Russia		1		NO
+TCGA-3B-A9HI	UPS	68	2009	Male	No	R1	[Unknown]	[Unknown]	WITH TUMOR	0:LIVING	0.0	50.0	YES	606.0	1:Recurred/Progressed	19.9	Progressive Disease	Locoregional Recurrence	19.9	Distant Metastasis	Lung	26.01973684	United States		25		NO
+TCGA-DX-A1KX	UPS	67	2009	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	68.7	NO		0:DiseaseFree	68.7							United States		4		NO
+TCGA-DX-A3M2	UPS	59	2011	Male	Yes	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	34.7	NO		0:DiseaseFree	34.7	Complete Response						United States		1		NO
+TCGA-DX-A3U8	UPS	43	2010	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	4.5	YES	128.0	1:Recurred/Progressed	4.2	Progressive Disease			Distant Metastasis	Lung	4.210526316	United States	No Major Vessel Involvement	4		YES
+TCGA-DX-A7EF	UPS	88	2005	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	21.3	YES	294.0	1:Recurred/Progressed	9.7		Locoregional Recurrence	16.8	Distant Metastasis	Lung	9.671052632	United States		13	10.0	NO
+TCGA-DX-A7ET	UPS	71	2013	Male	Yes	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	15.2	NO		0:DiseaseFree	15.2	Complete Response						United States		11	10.0	NO
+TCGA-DX-A8BJ	UPS	76	2011	Male	No	R0	YES	NO	TUMOR FREE	1:DECEASED	0.0	9.3	NO		1:Recurred/Progressed	9.3							United States		7		YES
+TCGA-DX-A8BK	UPS	61	2009	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	62.0	NO		0:DiseaseFree	62.0	Complete Response						United States		2	75.0	NO
+TCGA-DX-A8BM	UPS	60	2011	Male	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	47.9	NO		0:DiseaseFree	47.9	Complete Response						United States		7	60.0	NO
+TCGA-DX-A8BN	UPS	78	2011	Female	No	R1	YES	NO	TUMOR FREE	0:LIVING	0.0	38.2	NO		0:DiseaseFree	38.2	Complete Response						United States		16		NO
+TCGA-DX-A8BO	UPS	67	2011	Female	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	40.8	YES	333.0	1:Recurred/Progressed	11.0	Complete Response	Locoregional Recurrence	11.0				United States		11	15.0	NO
+TCGA-DX-A8BT	UPS	63	2011	Female	No	R1	YES	NO	TUMOR FREE	0:LIVING	0.0	40.5	YES	668.0	1:Recurred/Progressed	22.0	Complete Response	Locoregional Recurrence	22.0				United States		12		NO
+TCGA-DX-A8BU	UPS	58	2006	Male	No	R1	YES	YES	WITH TUMOR	1:DECEASED	1.0	36.7	YES	107.0	1:Recurred/Progressed	3.5				Distant Metastasis	Lung	3.519736842	United States		8	30.0	NO
+TCGA-DX-A8BX	UPS	52	2006	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	19.4	NO		1:Recurred/Progressed	19.4							United States		11	50.0	NO
+TCGA-DX-A8BZ	UPS	78	2013	Female	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	6.6	YES	90.0	1:Recurred/Progressed	3.0				Distant Metastasis	Lung	2.960526316	United States	No Major Vessel Involvement	11		NO
+TCGA-DX-AB2O	UPS	78	2007	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	86.2	NO		0:DiseaseFree	86.2	Complete Response						United States		21	10.0	NO
+TCGA-DX-AB2P	UPS	79	2005	Male	Yes	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	12.1	YES	161.0	1:Recurred/Progressed	5.3		Locoregional Recurrence	5.3	Distant Metastasis	Lung	5.296052632	United States		17	50.0	NO
+TCGA-DX-AB2Q	UPS	65	2009	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	66.8	YES	490.0	1:Recurred/Progressed	16.1	Complete Response			Distant Metastasis	Groin	16.11842105	United States		14	5.0	NO
+TCGA-DX-AB2W	UPS	62	2006	Female	Yes	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	106.5	NO		0:DiseaseFree	106.5	Complete Response						United States		11	15.0	NO
+TCGA-DX-AB2Z	UPS	87	2010	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	50.4	NO		0:DiseaseFree	50.4	Complete Response						United States		8	5.0	NO
+TCGA-DX-AB32	UPS	51	2006	Male	Yes	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	102.0	NO		0:DiseaseFree	102.0	Complete Response						United States		18	20.0	NO
+TCGA-FX-A3TO	UPS	87	2012	Male	No	R1	NO	NO	TUMOR FREE	0:LIVING	0.0	20.3	NO		0:DiseaseFree	20.3	Complete Response						United States		8		NO
+TCGA-HB-A2OT	UPS	78	2009	Female	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	67.7	NO		0:DiseaseFree	67.7							United States		28		NO
+TCGA-IE-A4EJ	UPS	84	2012	Female	No	R1	[Unknown]	[Unknown]	[Unknown]	0:LIVING	0.0	3.2	NO		0:DiseaseFree	3.2	Complete Response						United States		5		NO
+TCGA-K1-A6RU	UPS	66	2013	Female	No	R1	YES	YES	WITH TUMOR	1:DECEASED	1.0	23.4	YES	142.0	1:Recurred/Progressed	4.7	Progressive Disease			Distant Metastasis	Bone	4.671052632	United States		26	20.0	
+TCGA-LI-A9QH	UPS	72	2013	Female	Yes	R2	YES	NO	[Not Available]	1:DECEASED	0.0	17.8	YES	426.0	1:Recurred/Progressed	14.0				Distant Metastasis	Lung	14.01315789	United States		24	15.0	NO
+TCGA-MB-A5Y8	UPS	60	2012	Female	No	R0	YES	YES	TUMOR FREE	0:LIVING	0.0	25.4	NO		0:DiseaseFree	25.4	Complete Response						United States		3	0.0	
+TCGA-MB-A5Y9	UPS	90	2012	Male	Yes	R1	NO	NO	WITH TUMOR	0:LIVING	0.0	8.3	NO		0:DiseaseFree	8.3	Stable Disease						United States		45	5.0	NO
+TCGA-MB-A5YA	UPS	63	2012	Male	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	0.5	NO		0:DiseaseFree	0.5	Complete Response						United States	Yes, NOS	8	0.0	NO
+TCGA-MB-A8JK	UPS	49	2013	Male	No	RX	YES	NO	TUMOR FREE	0:LIVING	0.0	21.7	NO		0:DiseaseFree	21.7	Complete Response						United States		21	5.0	NO
+TCGA-QC-A6FX	UPS	68	2013	Male	Yes	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	21.0	NO		0:DiseaseFree	21.0	Complete Response						United States		12	10.0	NO
+TCGA-QQ-A5V9	UPS	76	1997	Male	No	R0	NO	NO	WITH TUMOR	1:DECEASED	1.0	46.8	YES	405.0	1:Recurred/Progressed	13.3				Distant Metastasis	Lung	13.32236842	United States		9		NO
+TCGA-SG-A6Z4	UPS	47	2013	Male	No	R1	YES	YES	WITH TUMOR	0:LIVING	0.0	18.9	YES	105.0	1:Recurred/Progressed	3.5	Stable Disease			Distant Metastasis	Lung	3.453947368	United States		44	30.0	NO
+TCGA-SG-A849	UPS	78	2013	Male	Yes	R1	YES	NO	TUMOR FREE	0:LIVING	0.0	17.5	NO		0:DiseaseFree	17.5	Complete Response						United States		26	30.0	
+TCGA-SI-A71O	UPS	29	2013	Male	No	RX	YES	YES	WITH TUMOR	1:DECEASED	1.0	22.8	YES	264.0	1:Recurred/Progressed	8.7	Progressive Disease	Locoregional Recurrence	22.5	Distant Metastasis	Lung	8.684210526000001	United States		29		NO
+TCGA-SI-AA8B	UPS	80	2013	Female	No	R1	NO	NO	WITH TUMOR	1:DECEASED	1.0	8.6	NO		1:Recurred/Progressed	8.6	Stable Disease						United States		20		NO
+TCGA-VT-A80G	UPS	66	2013	Male	No	R0	YES	NO	WITH TUMOR	0:LIVING	0.0	10.7	YES	26.0	1:Recurred/Progressed	0.9	Progressive Disease			Distant Metastasis	Lung	0.855263158	United States		17	10.0	NO
+TCGA-VT-A80J	UPS	49	2012	Female	Yes	R0	NO	YES	TUMOR FREE	0:LIVING	0.0	26.2	YES	355.0	1:Recurred/Progressed	11.7	Stable Disease			Distant Metastasis	inguinal lymph node	11.67763158	United States		41	45.0	
+TCGA-VT-AB3D	UPS	71	2013	Male	No	R0	YES	NO	TUMOR FREE	0:LIVING	0.0	12.5	NO		0:DiseaseFree	12.5	Stable Disease						United States		13		NO
+TCGA-WK-A8XQ	UPS	57	2009	Male	No	R2	NO	NO	WITH TUMOR	1:DECEASED	1.0	4.8	YES	27.0	1:Recurred/Progressed	0.9		Locoregional Recurrence	0.9				United States		3	50.0	NO
+TCGA-WK-A8Y0	UPS	49	2010	Female	No	R0	YES	NO	WITH TUMOR	1:DECEASED	1.0	22.6	YES	281.0	1:Recurred/Progressed	9.2		Locoregional Recurrence	15.8	Distant Metastasis	Lung	3.651315789	United States		25	10.0	NO
+TCGA-X6-A7WC	UPS	74	2011	Male	No	R0	YES	YES	TUMOR FREE	0:LIVING	0.0	45.4	YES	301.0	1:Recurred/Progressed	9.9				Distant Metastasis	Lung	9.901315789	United States	No Major Vessel Involvement	50		NO
+TCGA-X6-A8C2	UPS	56	2012	Male	No	R1	YES	YES	WITH TUMOR	0:LIVING	0.0	35.2	YES	7.0	1:Recurred/Progressed	0.2				New Primary Tumor	Lung	0.230263158	United States		13	0.0	NO
+TCGA-Z4-AAPG	UPS	64	2013	Female	No	R0	NO	NO	TUMOR FREE	0:LIVING	0.0	16.0	NO		0:DiseaseFree	16.0	Complete Response						Russia		4		NO

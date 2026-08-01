@@ -1,0 +1,4 @@
+Mediation Analysis (Baron & Kenny + Sobel Test)
+
+PPARG: Indirect=0.0525, Sobel P=0.7515, Mediated=4.2%
+CD36: Indirect=-0.1217, Sobel P=0.3975, Mediated=-9.8%

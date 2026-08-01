@@ -22,6 +22,8 @@ source("scripts/stage3_multiomics_mechanism.R")
 cat("\n========================================\n")
 cat("  Stage 4 Translation: Drug sensitivity + clinical\n")
 cat("========================================\n")
+source("scripts/stage2_prognostic_model/05_GSE30929_validation.R")
+source("scripts/stage2_prognostic_model/05_GSE30929_validation.R")
 source("scripts/stage4_translation_extended.R")
 
 cat("\n========================================\n")
