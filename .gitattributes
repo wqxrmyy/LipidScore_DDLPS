@@ -1,0 +1,31 @@
+# Normalize line endings across platforms.
+#
+# Why this matters here: the repository is authored on Windows and consumed on
+# Linux/macOS (reviewers, CI, containers). Without this file, `core.autocrlf`
+# rewrites checked-out files with CRLF, which silently breaks run_all.sh —
+# a shell script with CRLF line endings fails with "bad interpreter" or
+# directory-not-found errors that look unrelated to line endings.
+
+* text=auto
+
+# Text files that must keep LF in the working tree, not just in the object store
+*.sh    text eol=lf
+*.py    text eol=lf
+*.R     text eol=lf
+*.r     text eol=lf
+*.md    text eol=lf
+*.tsv   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+
+# Never touch these: line-ending conversion corrupts binary formats
+*.docx  binary
+*.pdf   binary
+*.png   binary
+*.tif   binary
+*.tiff  binary
+*.rds   binary
+*.gz    binary
+*.zip   binary
+*.tar   binary
