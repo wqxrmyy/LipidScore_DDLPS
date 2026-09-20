@@ -1,0 +1,9 @@
+issue_id: LIM-202609202025
+analysis_module: 01_lipid_score_bulk
+issue: 六基因评分 DDLPS DD vs WD 配对比较边缘显著 (p=0.084)
+direction: DD < WD (中位差值 -0.607)
+consistency: 7/10 对同向
+sensitivity_exclude_sWD: p=0.0781, median_delta=-0.688, 6/8 对同向
+root_cause: n=10 配对样本统计效力不足 (p<0.05 需 8/10 对同向)
+resolution: 主分析如实报告 p=0.084；敏感性分析验证方向稳健；单细胞分析作为独立验证
+status: active
