@@ -1,0 +1,12 @@
+# 限制记录模板
+# 每个因数据限制无法完成的分析，都必须在此登记，禁止静默降级
+
+issue_id: LIM-001
+analysis_module: 04_score_projection
+issue: "SREBF1 在 scRNA-seq 中 dropout > 80%，无法可靠计算单细胞评分"
+discovered_at: "YYYY-MM-DD"
+fallback: "将 SREBF1 从单细胞评分中移除，仅保留 FASN/ACLY/HMGCR/SCD/PPARG"
+impact: "评分可能低估 SREBF1 介导的转录调控贡献"
+cross_validation: "在 bulk 评分中保留 SREBF1，与单细胞评分做相关性比较"
+recommendation: "结论中显式说明该限制，不将单细胞评分等同于 bulk 评分"
+status: "active"

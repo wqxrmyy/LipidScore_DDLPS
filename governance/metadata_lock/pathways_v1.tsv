@@ -1,0 +1,6 @@
+pathway_id	pathway_name	genes	source
+hsa00061	FattyAcidBiosynthesis	FASN,ACLY,SCD,ACACA,ELOVL6	KEGG
+hsa03320	PPAR_Signaling	PPARG,FABP4,PLIN1,LPL,ADIPOQ	KEGG
+hsa00900	Cholesterol_Biosynthesis	HMGCR,SQLE,MVD,MVK	KEGG
+TGFB_Signaling	TGFB_Signaling	TGFB1,TGFBR1,TGFBR2,SMAD2,SMAD3	Hallmark
+IGF1_Axis	IGF1_Axis	IGF1,IGF1R,IRS1,IRS2	Custom
