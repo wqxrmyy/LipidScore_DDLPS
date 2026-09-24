@@ -84,7 +84,7 @@ stock CRAN setup.
 ## Quick start
 
 ```sh
-git clone https://github.com/wqxrmyy/LipidScore_DDLPS.git
+git clone -b v2 https://github.com/wqxrmyy/LipidScore_DDLPS.git
 cd LipidScore_DDLPS
 
 # 1) fetch the source data (see DATA_SOURCES.md for the accessions)
@@ -93,6 +93,13 @@ cd LipidScore_DDLPS
 # 2) run both implementations and the cross-check
 sh run_all.sh
 ```
+
+> **Branch of record: `v2`.** This repository also hosts an **earlier, unrelated
+> project** on `master` — a different manuscript and pipeline, with no shared
+> commit ancestry. Clone with `-b v2` as shown above: a bare `git clone` fetches
+> the repository default branch, which is still `master`, and would therefore
+> hand you that older project instead of the code described here.
+> Keep `-b v2` until the default branch is switched in repository settings.
 
 `run_all.sh` runs, in order: the R implementation, the Python implementation,
 the cross-validation assertions, and the repository hygiene check. Any failing
