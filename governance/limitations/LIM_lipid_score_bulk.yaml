@@ -1,0 +1,12 @@
+issue_id: LIM-202609250002
+analysis_module: 01_lipid_score_bulk (R)
+issue: 原始矩阵含 756 个 NA，分布于 9 个样本
+na_samples: P1_DDLPS_DD, P2_DDLPS_DD, P10_DDLPS_DD, P14_DDLPS_DD, P2_DDLPS_sWD, P1_DDLPS_WD, P10_DDLPS_WD, P5_WDLPS, P13_WDLPS
+root_cause: 622 个基因在 9 个样本中缺失，呈批次特异性模式，疑似不同建库批次基因注释差异
+resolution: NA 替换为 0（评分基因无 NA，不影响评分计算）
+dup_gene_rows_dropped: 12873
+library_size_source: full_matrix_before_symbol_collapse  # [FIX-1]
+sWD_handling: kept_as_separate_label_not_merged_into_WD  # [FIX-2]
+effective_n_pairs_main: 8
+effective_n_pairs_sensitivity: 10
+status: active
