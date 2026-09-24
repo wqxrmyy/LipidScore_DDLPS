@@ -155,9 +155,24 @@ def main():
     print('   总计 / total: %d files, %.2f MB' % (len(tracked), total_mb))
 
     # --- commit count --------------------------------------------------------
+    # Count the branch that will be published (HEAD), NOT every ref in the object
+    # database. A tree that has fetched an unrelated history -- an earlier
+    # repository, a contributor's fork, a sibling branch -- would otherwise report
+    # the two histories summed, which does not describe what is being pushed.
+    # Observed: HEAD = 5 commits, but `--all` = 19 after fetching a foreign
+    # history of 14. Report the difference explicitly instead of letting it
+    # inflate the figure silently.
     try:
-        n = git(root, 'rev-list', '--all', '--count').strip()
-        print('   提交数 / commits: %s' % n)
+        n = git(root, 'rev-list', 'HEAD', '--count').strip()
+        line = '   提交数 / commits: %s' % n
+        try:
+            all_n = git(root, 'rev-list', '--all', '--count').strip()
+            if all_n != n:
+                line += ('  (all refs: %s -- other, unrelated histories present '
+                         'and NOT counted above)' % all_n)
+        except RuntimeError:
+            pass
+        print(line)
     except RuntimeError:
         pass
 
