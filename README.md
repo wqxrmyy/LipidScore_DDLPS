@@ -97,11 +97,10 @@ sh run_all.sh
 > **Branch of record: `master`.** The code described here is the repository
 > default branch, so a plain `git clone` is all that is needed — no `-b` flag.
 >
-> ⚠️ The repository previously hosted an **earlier, unrelated project** — a
-> different manuscript and pipeline, with no shared commit ancestry. That
-> history is no longer on any branch. It remains reachable only through the
-> legacy tag **`v2.0`**, which does **not** identify this release: do not check
-> out `v2.0` expecting the code described in this README.
+> **A note on this repository's history.** An earlier, unrelated project — a
+> different manuscript and pipeline, with no shared commit ancestry —
+> previously occupied this repository. It has been withdrawn and is not
+> reachable from any ref.
 
 `run_all.sh` runs, in order: the R implementation, the Python implementation,
 the cross-validation assertions, and the repository hygiene check. Any failing
