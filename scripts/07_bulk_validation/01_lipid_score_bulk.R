@@ -1,3 +1,18 @@
+# ==========================================================================
+# ENGLISH SUMMARY - the detailed comments below are in the author working
+# language and are left unchanged on purpose (they record analysis-convention decisions).
+# Purpose : Independent R re-implementation of the six-gene lipid-metabolism score on
+#           the GSE221492 bulk liposarcoma atlas, plus the paired well- vs
+#           de-differentiated comparison.
+# Input   : data/GSE221492_bulk/raw/GSE221492_bulk_LPS_atlas_raw_counts_matrix.tsv.gz
+#           governance/metadata_lock/score_genes_v1.tsv  (gene list, never hard-coded)
+#           Project root may be overridden with the LPS_ROOT environment variable.
+# Output  : results/figures/bulk_lipid_score_paired.pdf / .png
+#           results/tables/bulk_lipid_score_all_samples.csv, _paired_delta.csv (+ wide matrix)
+# Relation: Cross-checks 01_lipid_score_gse221492.py (Python), the original source of
+#           every number reported in the manuscript. The two implementations must
+#           agree digit-for-digit; scripts/09_qc/assert_manuscript_numbers.py asserts it.
+# ==========================================================================
 # ============================================================
 # scripts/07_bulk_validation/01_lipid_score_bulk.R
 # 目的：GSE221492 bulk RNA-seq 六基因脂质代谢评分 + 配对比较

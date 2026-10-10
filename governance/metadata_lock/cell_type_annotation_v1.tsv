@@ -1,2 +1,37 @@
-cluster_id	singleR_label	marker_based_label	cnv_status	final_label	confidence	note
-PLACEHOLDER	PLACEHOLDER	PLACEHOLDER	PLACEHOLDER	PLACEHOLDER	PLACEHOLDER	三证据一致才锁定
+L1	L2	L3	n_cells	n_patients	n_tissues	bucket	derived_from	note
+Tumor cells	Adipo diff	Adipo diff_1	11777	17	7	Adipose	s39_s5_meta.csv	Source L1 = Tumor cells; re-assignment recorded in LIM-P3-015 (phenotype placed on the adipocytic axis)
+Myeloid cells	Monocytes	CXCL8+ intermediate monocytes	11280	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Invasion	Invasion_3	7163	17	7	Tumor	s39_s5_meta.csv	
+Myeloid cells	Monocytes	classical monocytes	7139	17	7	Immune	s39_s5_meta.csv	
+Lymphoid cells	T cells	CD4+ T cells	6670	17	7	Immune	s39_s5_meta.csv	
+Endothelial cells	Endothelial cells	Endothelial cells	6045	17	7	Stroma	s39_s5_meta.csv	
+Lymphoid cells	T cells	CD8+ T cells	5016	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	ECM remodeling	ECM remodeling	4775	17	7	Tumor	s39_s5_meta.csv	
+Myeloid cells	MDSC	MDSC	4765	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Stemness	Stemness	4287	17	6	Tumor	s39_s5_meta.csv	
+Tumor cells	Hypoxia	Hypoxia	3902	17	7	Tumor	s39_s5_meta.csv	
+RBC	RBC	RBC	2509	17	7	Stroma	s39_s5_meta.csv	
+Lymphoid cells	B cells	B cells	2340	17	7	Immune	s39_s5_meta.csv	
+Cycling cells	Cycling cells	Cycling cells	1989	17	7	Tumor	s39_s5_meta.csv	
+Lymphoid cells	NK cells	NKbright cells	1876	17	7	Immune	s39_s5_meta.csv	
+Pericytes	Pericytes	Pericytes	1863	17	7	Stroma	s39_s5_meta.csv	
+Lymphoid cells	T cells	CD4+ Treg cells	1725	17	7	Immune	s39_s5_meta.csv	
+Myeloid cells	Macrophages	TAM3	1372	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Angiogenesis	Angiogenesis	1368	15	7	Tumor	s39_s5_meta.csv	
+Lymphoid cells	NK cells	NKdim cells	1366	17	7	Immune	s39_s5_meta.csv	
+Lymphoid cells	Plasmocytes	Plasmocytes	1366	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Invasion	Invasion_2	1235	16	7	Tumor	s39_s5_meta.csv	
+Lymphoid cells	NKT cells	NKT cells	1177	17	7	Immune	s39_s5_meta.csv	
+Myeloid cells	DC	cDC2	1071	17	7	Immune	s39_s5_meta.csv	
+Normal adipocytes	Normal adipocytes	Normal adipocytes	990	17	7	Adipose	s39_s5_meta.csv	
+Mesothelial cells	Mesothelial cells	Mesothelial cells	981	17	7	Stroma	s39_s5_meta.csv	
+Myeloid cells	TAN	TAN	952	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Adipo diff	Adipo diff_2	950	14	7	Adipose	s39_s5_meta.csv	Source L1 = Tumor cells; re-assignment recorded in LIM-P3-015 (phenotype placed on the adipocytic axis)
+Myeloid cells	Monocytes	non-classical monocytes	806	17	7	Immune	s39_s5_meta.csv	
+Mast cells	Mast cells	Mast cells	678	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Invasion	Invasion_4	660	16	7	Tumor	s39_s5_meta.csv	
+Myeloid cells	DC	cDC1	492	17	7	Immune	s39_s5_meta.csv	
+Myeloid cells	Macrophages	TAM1	443	17	7	Immune	s39_s5_meta.csv	
+Myeloid cells	DC	pDC	387	17	7	Immune	s39_s5_meta.csv	
+Tumor cells	Invasion	Invasion_1	321	9	5	Tumor	s39_s5_meta.csv	
+Tumor cells	Adipo diff	Adipo diff_3	154	3	2	Adipose	s39_s5_meta.csv	Source L1 = Tumor cells; re-assignment recorded in LIM-P3-015 (phenotype placed on the adipocytic axis)

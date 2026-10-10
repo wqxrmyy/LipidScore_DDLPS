@@ -1,4 +1,19 @@
 # -*- coding: utf-8 -*-
+# ==========================================================================
+# ENGLISH SUMMARY - the detailed comments below are in the author working
+# language and are left unchanged on purpose (it records analysis-convention decisions).
+# Purpose : Canonical implementation of the six-gene lipid-metabolism score on the
+#           GSE221492 bulk liposarcoma atlas (53 samples / 41 patients), including
+#           the paired well- vs de-differentiated comparison.
+# Input   : data/GSE221492_bulk/raw/GSE221492_bulk_LPS_atlas_raw_counts_matrix.tsv.gz
+#           governance/metadata_lock/score_genes_v1.tsv  (gene list, never hard-coded)
+# Output  : results/objects/d11_gse221492.json
+#           results/tables/bulk_lipid_score_py_summary.csv, _py_paired_delta.csv
+# Relation: This file is the ORIGINAL SOURCE of every number reported in the manuscript.
+#           scripts/07_bulk_validation/01_lipid_score_bulk.R is an independent
+#           re-implementation; scripts/09_qc/assert_manuscript_numbers.py asserts that
+#           the two agree digit-for-digit.
+# ==========================================================================
 """GSE221492（bulk LPS atlas, 53 样本/41 患者）独立队列验证 —— **规范实现**。
 
 本脚本是 scripts/07_bulk_validation/ 下**两套并存实现**之一：

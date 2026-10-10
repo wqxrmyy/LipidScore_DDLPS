@@ -1,5 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# ==========================================================================
+# ENGLISH SUMMARY - the detailed comments below are in the author working
+# language and are left unchanged on purpose (it records analysis-convention decisions).
+# Purpose : Three-layer regression check on the GSE221492 primary results.
+#   L1  the Python and R implementations agree (per-patient delta, n, count of
+#       DD<WD, P values, mean and median delta);
+#   L2  those outputs match the values reported in the manuscript (n=8, 6-of-8,
+#       P=0.078, mean delta -0.587; unpaired DD -0.305, WD +0.164, delta -0.469,
+#       Welch P 0.025; AUC 0.249, P 0.013);
+#   L3  with --manuscript PATH, that the manuscript text actually prints them.
+# Usage   : python scripts/09_qc/assert_manuscript_numbers.py
+#           python scripts/09_qc/assert_manuscript_numbers.py --manuscript <path>
+#           python scripts/09_qc/assert_manuscript_numbers.py --root <repo>
+# Exit    : 0 = all checks passed; 1 = at least one failure (printed item by item).
+# ==========================================================================
 """GSE221492 主结果交叉校验 —— 两套并存实现 + 本文报告值 三重断言。
 
 背景
