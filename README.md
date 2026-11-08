@@ -14,15 +14,19 @@ reported statistics. It is intentionally **not** a copy of the manuscript.
 
 | | Item | Note |
 |---|---|---|
-| ✅ | `scripts/` | analysis code — two independent implementations + QC assertions |
+| ✅ | `scripts/01_analysis/` | analysis code behind the figures and tables — single-cell, TCGA-SARC, GSE cohorts, score definition |
+| ✅ | `scripts/02_figures/` | one script per figure panel, plus the shared plotting library and the assembly kit |
+| ✅ | `scripts/07_bulk_validation/` | two independent implementations of the GSE221492 validation + QC assertions |
+| ✅ | `scripts/09_qc/` | assertions that tie the code output to the reported values |
 | ✅ | `governance/` | analysis plan, metadata locks, limitations register |
-| ✅ | `reproducibility/session_info/` | environment of record |
+| ✅ | `reproducibility/session_info/` | environment of record, plus `required_packages.txt` derived from the code |
 | ✅ | `README.md`, `DATA_SOURCES.md`, `PROVENANCE.md` | documentation |
 | ❌ | manuscript text (`.docx`, `.html`) | excluded — plagiarism-corpus risk |
 | ❌ | figures (`.pdf`, `.tif`, `.png`) | excluded — figure-library risk |
 | ❌ | `data/` | excluded — third-party; re-download, see `DATA_SOURCES.md` |
 | ❌ | `results/` | excluded under the code-only release decision |
 | ❌ | internal work snapshots | excluded — contain process artefacts |
+| ❌ | scripts that wrote the manuscript, the caption or the limitations register | excluded — they are provenance of the document, not code behind the paper |
 
 The exclusion list is not only a `.gitignore` convention:
 `scripts/00_repo_hygiene/check_hygiene.py` asserts against the **git index**, so
@@ -77,7 +81,11 @@ Verified on the environment of record (`reproducibility/session_info/`):
 | Python packages | `numpy`, `scipy` |
 
 The R implementation deliberately uses only those four packages, so it runs on a
-stock CRAN setup.
+stock CRAN setup. The analysis and figure code needs more — the full set that the
+scripts actually load is listed in
+[`reproducibility/session_info/required_packages.txt`](reproducibility/session_info/required_packages.txt)
+(derived from `library()` / `import` across the tree, because the archived
+sessionInfo files record only base R).
 
 ---
 
@@ -146,6 +154,48 @@ explicit labels.
 
 ---
 
+## The analysis and figure code
+
+`scripts/01_analysis/` and `scripts/02_figures/` carry the code that produced the
+figures and tables. They are published as they were executed, one script per
+analytic step or per panel, so a reader can trace any reported number back to the
+step that computed it.
+
+| Module | Directory | What it covers |
+|---|---|---|
+| Single-cell (GSE221493) | `scripts/01_analysis/scrna/` | 10x matrices → QC/normalisation → UMAP → Harmony → L1/L2 annotation → score projection → Kitagawa decomposition |
+| TCGA-SARC | `scripts/01_analysis/tcga/` | copy-number clusters, expression, purity, robustness → score revisions → Harrell C and bootstrap |
+| GSE cohorts | `scripts/01_analysis/validation/` | HR, C-index and direction checks for GSE30929 / GSE21122 / GSE159659 |
+| Acquisition | `scripts/01_analysis/fetch/` | GEO/TCGA download and unpacking, cohort tiering |
+| Score definition | `scripts/01_analysis/caliber/` | the six-gene formula, Ensembl checks, four endpoints, subgroup re-checks |
+| Figures | `scripts/02_figures/` | one script per panel; shared library in `utils/`, assembly in `assemble/` |
+
+**Paths.** The scripts read their roots from the environment instead of hard-coding
+a developer machine:
+
+| Variable | Meaning | Default |
+|---|---|---|
+| `LPS_DATA_ROOT` | project root holding `data/` and `results/` | `.` |
+| `LPS_FIG_ROOT` | figure working root — `scripts/02_figures/` | `.` |
+| `LPS_WORK_ROOT` | internal work tree referred to by a few analysis steps | `.` |
+| `R_BIN_DIR` | directory holding `Rscript` (only where one script shells out) | `.` |
+
+```sh
+export LPS_DATA_ROOT=$PWD
+export LPS_FIG_ROOT=$PWD/scripts/02_figures
+```
+
+**What is deliberately not here.** The 2026-09 archive contained 141 analysis
+scripts and 79 figure scripts. Forty-one of the analysis scripts and twelve of
+the figure helpers did not compute anything — they wrote the manuscript, the
+figure captions, the limitations register or the project memory, and several of
+them carried absolute paths into a personal notes directory. Those are
+**provenance of the document, not code behind the paper**, and are not published.
+The selection is recorded file by file in
+[`scripts/SELECTION.json`](scripts/SELECTION.json), not applied by pattern.
+
+---
+
 ## Cross-validation
 
 `scripts/09_qc/assert_manuscript_numbers.py` checks three layers:
@@ -190,14 +240,17 @@ priority is now reversed to match the manuscript.
 ```
 scripts/
   00_repo_hygiene/check_hygiene.py            no manuscript/figures/snapshots tracked
+  01_analysis/                                scrna/ tcga/ validation/ fetch/ caliber/
+  02_figures/                                 fig1…fig5/ figS1…figS3/ utils/ assemble/
   07_bulk_validation/01_lipid_score_bulk.R    independent implementation (R)
   07_bulk_validation/01_lipid_score_gse221492.py   reference implementation (Python)
   09_qc/assert_manuscript_numbers.py          three-layer cross-validation
+  SELECTION.json                              what the 2026-11 archive held and what was dropped
 governance/
   analysis_plan/analysis_plan_v1.md           pre-registered analysis plan
   metadata_lock/                              frozen gene sets, sample manifests, annotations
   limitations/                                limitations register per analysis
-reproducibility/session_info/                 environment of record
+reproducibility/session_info/                 environment of record + required_packages.txt
 run_all.sh                                    one-shot pipeline
 DATA_SOURCES.md                               dataset accessions and per-file provenance
 PROVENANCE.md                                 how the commit history was reconstructed

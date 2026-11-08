@@ -1,0 +1,50 @@
+# Packages referenced by the published code
+# Derived mechanically from library()/require()/import in scripts/ on 2026-11-08.
+# The archived sessionInfo files record only base R; this list is what the code
+# actually loads, so it is the useful minimum for a fresh environment.
+
+[R]
+AUCell
+AnnotationDbi
+CellChat
+ConsensusClusterPlus
+FNN
+GSVA
+Matrix
+Seurat
+SingleCellExperiment
+data.table
+dplyr
+future
+ggplot2
+gridExtra
+harmony
+irlba
+jsonlite
+magick
+msigdbr
+org.Hs.eg.db
+pROC
+patchwork
+reshape2
+scales
+scattermore
+slingshot
+survival
+survminer
+tidyr
+timeROC
+viridisLite
+
+[Python]
+concurrent
+docx
+lifelines
+numpy
+pandas
+pyreadr
+s3_mediation
+scipy
+
+# R 4.6.0 (2026-04-24 ucrt), x86_64-w64-mingw32
+# Python 3.13
