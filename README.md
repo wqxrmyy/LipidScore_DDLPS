@@ -8,6 +8,14 @@ Reproducibility code accompanying the manuscript:
 The repository holds the analysis code and the governance locks behind the
 reported statistics. It is intentionally **not** a copy of the manuscript.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274039.svg)](https://doi.org/10.5281/zenodo.23274039)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
+Every published version is archived on Zenodo. **Cite the concept DOI**
+`10.5281/zenodo.23274039` — it always resolves to the newest version, so a
+citation stays correct when the code is updated. To pin the exact snapshot a
+result came from, use that version's own DOI instead (listed on the Zenodo page).
+
 ---
 
 ## Scope: what is here, and what is deliberately not
@@ -284,8 +292,33 @@ assertions in English so the numbers can be checked without reading the comments
 ## Citation
 
 If you use this code, please cite the manuscript (full citation to be added upon
-publication) and this repository.
+publication) and this archive. The archive DOI is the **concept DOI**, which
+resolves to the newest published version:
+
+```
+Xiao, W. (2026). LipidScore-DDLPS: analysis code for a six-gene
+lipid-metabolism score in dedifferentiated liposarcoma (v1.1.0).
+Zenodo. https://doi.org/10.5281/zenodo.23274039
+```
+
+BibTeX:
+
+```bibtex
+@software{xiao_lipidscore_ddlps_2026,
+  author    = {Xiao, Weihua},
+  title     = {LipidScore-DDLPS: analysis code for a six-gene
+               lipid-metabolism score in dedifferentiated liposarcoma},
+  year      = {2026},
+  version   = {v1.1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23274039},
+  url       = {https://doi.org/10.5281/zenodo.23274039}
+}
+```
+
+`CITATION.cff` at the repository root carries the same metadata and can be read
+directly by GitHub, Zenodo and reference managers.
 
 ## Contact
 
-Corresponding author: **Weihua Xiao** — hua2577@126.com
+Corresponding author: **Weihua Xiao** — hua7708@126.com

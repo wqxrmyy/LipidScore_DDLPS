@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this archive."
+title: "LipidScore-DDLPS: analysis code for a six-gene lipid-metabolism score in dedifferentiated liposarcoma"
+type: software
+version: 1.1.0
+doi: 10.5281/zenodo.23274039
+date-released: "2026-11-08"
+license: CC-BY-4.0
+repository-code: "https://github.com/wqxrmyy/LipidScore_DDLPS"
+url: "https://github.com/wqxrmyy/LipidScore_DDLPS"
+abstract: >-
+  Analysis code, figure code and governance locks behind a six-gene lipid
+  metabolism score for dedifferentiated liposarcoma (DDLPS): single-cell
+  processing of GSE221493, TCGA-SARC and GSE cohort analysis, the score
+  definition and its end points, two independent implementations of the bulk
+  validation, and the assertions that tie code output to the reported values.
+  The archive does not contain the source data, which are third-party and
+  public; see DATA_SOURCES.md for accessions.
+keywords:
+  - dedifferentiated liposarcoma
+  - lipid metabolism
+  - prognostic score
+  - single-cell RNA sequencing
+  - reproducibility
+authors:
+  - family-names: Xiao
+    given-names: Weihua
+    orcid: "https://orcid.org/0000-0002-9756-312X"
+    affiliation: >-
+      Department of Pathology, Beilun Branch of the First Affiliated Hospital,
+      College of Medicine, Zhejiang University, Ningbo, China
