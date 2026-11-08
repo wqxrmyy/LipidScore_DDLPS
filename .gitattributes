@@ -19,6 +19,11 @@
 *.yml   text eol=lf
 *.json  text eol=lf
 
+# Machine-read by GitHub, Zenodo and reference managers; keep LF so the parsed
+# text is byte-identical on every platform.
+*.cff   text eol=lf
+LICENSE text eol=lf
+
 # Never touch these: line-ending conversion corrupts binary formats
 *.docx  binary
 *.pdf   binary
